@@ -11,7 +11,7 @@ with st.expander('Data'):
 
 with st.expander('Data visualization'):
   st.scatter_chart(data=my_data,x='bill_length_mm',y='body_mass_g',color='species')
-with st.sidebar:
+with st.expander('Data Feature'):
   st.header('input features')
   islands=st.selectbox('islands',{'Torgersen','Biscoe','Dream'})
   bill_length_mm=st.slider('bill length (mm)',32.1,59.6,43.9)
@@ -21,12 +21,12 @@ with st.sidebar:
   gender=st.selectbox('gender',{'female','male'})
 
 # create Dataframe
-data={'islands':islands,
-'bill_length_mm':bill_length_mm,
-'bill_depth_mm':bill_depth_mm,
-'flipper_length_mm=st':flipper_length_mm,
-'body_mass_g':body_mass_g,
-'gender': gender      
-}
-input_df=pd.DataFrame(data, index=[0])
-input_df
+  data={'islands':islands,
+  'bill_length_mm':bill_length_mm,
+  'bill_depth_mm':bill_depth_mm,
+  'flipper_length_mm=st':flipper_length_mm,
+  'body_mass_g':body_mass_g,
+  'gender': gender      
+  }
+  input_df=pd.DataFrame(data, index=[0])
+  input_df
