@@ -30,3 +30,8 @@ with st.expander('Data Feature'):
   }
   input_df=pd.DataFrame(data, index=[0])
   input_df
+
+#encode
+encode=['island','gender']
+my_data=pd.get_dumies(my_data,prefix=encode)
+my_data
