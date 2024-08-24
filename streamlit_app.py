@@ -18,7 +18,7 @@ with st.expander('Data Feature'):
   bill_depth_mm=st.slider('bill depth (mm)',13.1,21.5,17.2)
   flipper_length_mm=st.slider('flipper length (mm)',172.0,231.0,201.0)
   body_mass_g=st.slider('body mass g',2700.0,6300.0,4207.0)
-  gender=st.selectbox('gender',{'female','male'})
+  sex=st.selectbox('gender',{'female','male'})
 
 # create Dataframe
   data={'islands':islands,
@@ -26,7 +26,7 @@ with st.expander('Data Feature'):
   'bill_depth_mm':bill_depth_mm,
   'flipper_length_mm=st':flipper_length_mm,
   'body_mass_g':body_mass_g,
-  'gender': gender      
+  'sex': sex      
   }
   input_df=pd.DataFrame(data, index=[0])
   input_df
