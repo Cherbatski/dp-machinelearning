@@ -33,5 +33,5 @@ with st.expander('Data Feature'):
 
 #encode
 encode=['island','gender']
-my_data=pd.get_dumies(my_data,prefix=encode)
-my_data
+new_data=pd.get_dummies(my_data,prefix=encode)
+new_data
