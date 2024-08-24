@@ -30,7 +30,8 @@ with st.expander('Data Feature'):
   }
   input_df=pd.DataFrame(data, index=[0])
   input_df
-
+st.write('my penguins data')
+my_data
 #encode
 encode=['island','gender']
 new_data=pd.get_dummies(my_data,prefix=encode)
