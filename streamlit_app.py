@@ -33,6 +33,6 @@ with st.expander('Data Feature'):
 st.write('my penguins data')
 my_data
 #encode
-encode=['island','gender']
+encode=['island','sex']
 new_data=pd.get_dummies(my_data,prefix=encode)
 new_data
